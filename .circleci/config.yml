@@ -39,7 +39,7 @@ jobs:
 
 
       #deploy
-      - run: npm i now
+      - run: sudo npm i -g now
 
       - run:
           command:
