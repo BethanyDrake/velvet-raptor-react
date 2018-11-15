@@ -39,7 +39,7 @@ jobs:
 
 
       #deploy
-      - run: npm i -g now
+      - run: npm i now
 
       - run:
           command:
