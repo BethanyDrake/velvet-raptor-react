@@ -16,13 +16,8 @@ jobs:
 
     working_directory: ~/repo
 
-    dependencies:
-      override:
-        - yarn
-      cache_directories:
-        - ~/.cache/yarn
-      pre:
-        - yarn global add now
+
+
 
     steps:
       - checkout
@@ -45,6 +40,7 @@ jobs:
       - run: yarn test
 
 
+      - run: yarn global add now
 
       - deploy:
           command:
