@@ -35,3 +35,10 @@ jobs:
 
       # run tests!
       - run: yarn test
+
+      deployment:
+        development:
+          branch: master
+          commands:
+            - now
+            - now alias velvet-raptor
