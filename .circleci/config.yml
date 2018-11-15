@@ -36,13 +36,9 @@ jobs:
 
       # run tests!
       - run: yarn test
-  deploy-stage:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:10.6.0
 
-    working_directory: ~/repo
-    steps:
+
+      #deploy
       - run: yarn add now && yarn install
 
       - run:
@@ -52,15 +48,3 @@ jobs:
       - run:
           name: set alias
           command: now alias velvet-raptor
-
-  workflows:
-    version: 2
-    build-deploy:
-      jobs:
-        - build
-        - deploy-stage:
-            requires:
-              - build
-            filters:
-              branches:
-                only: staging
