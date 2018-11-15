@@ -38,9 +38,7 @@ jobs:
       - run: yarn test
   deploy:
     steps:
-      - run: |
-        yarn add now &&
-        yarn install
+      - run: yarn add now && yarn install
 
       - run:
           command:
