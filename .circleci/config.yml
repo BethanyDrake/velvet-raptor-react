@@ -39,7 +39,9 @@ jobs:
 
 
       #deploy
-      - run: sudo npm i -g now
+      - run:
+          command:
+            yarn global add now
 
       - run:
           command:
