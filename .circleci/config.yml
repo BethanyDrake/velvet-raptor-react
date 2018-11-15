@@ -36,6 +36,12 @@ jobs:
       # run tests!
       - run: yarn test
 
-      - deploy: |
-          now
-          now alias velvet-raptor
+
+
+      - deploy:
+          command:
+            now
+
+      - run:
+          name: set alias
+          command: now alias velvet-raptor
