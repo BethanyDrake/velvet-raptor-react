@@ -39,7 +39,7 @@ jobs:
 
 
       #deploy
-      - run: yarn add now && yarn install
+      - run: npm i -g now
 
       - run:
           command:
