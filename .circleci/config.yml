@@ -45,7 +45,7 @@ jobs:
 
 
       #deploy
-      - run: sudo yarn global add now now-realias
+      - run: sudo yarn global add now
 
       - run:
           command:
@@ -53,4 +53,4 @@ jobs:
 
       - run:
           name: set alias
-          command: now-realias wtMwPTzvDTqOoV6jWI94UoQp
+          command: now alias -t wtMwPTzvDTqOoV6jWI94UoQp
