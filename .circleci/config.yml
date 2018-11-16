@@ -53,4 +53,4 @@ jobs:
 
       - run:
           name: set alias
-          command: now-realias -t wtMwPTzvDTqOoV6jWI94UoQp
+          command: now-realias wtMwPTzvDTqOoV6jWI94UoQp
