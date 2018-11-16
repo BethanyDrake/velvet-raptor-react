@@ -2,10 +2,5 @@
   "alias": ["velvet-raptor"],
   "files": ["build"],
   "name": "velvet-raptor",
-  "public": true,
-  "NOW_TOKEN": "wtMwPTzvDTqOoV6jWI94UoQp",
-  "token": "wtMwPTzvDTqOoV6jWI94UoQp",
-  "env": {
-    "NOW_TOKEN": "wtMwPTzvDTqOoV6jWI94UoQp",
-  }
+  "public": true  
 }
