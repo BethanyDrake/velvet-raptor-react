@@ -45,12 +45,12 @@ jobs:
 
 
       #deploy
-      - run: sudo npm i -g now
+      - run: sudo yarn global add now now-realias
 
       - run:
           command:
-            now build
+            now build --name=website-name --static --public
 
       - run:
           name: set alias
-          command: now alias velvet-raptor
+          command: now-realias

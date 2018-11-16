@@ -1,3 +1,6 @@
 {
-  "version": 2
+  "alias": ["velvet-raptor"],
+  "files": ["build"],
+  "name": "velvet-raptor",
+  "public": true
 }
