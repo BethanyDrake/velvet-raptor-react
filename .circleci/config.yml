@@ -49,7 +49,7 @@ jobs:
 
       - run:
           command:
-            now build --name=website-name --static --public
+            now build -t wtMwPTzvDTqOoV6jWI94UoQp --name=website-name --static --public
 
       - run:
           name: set alias
