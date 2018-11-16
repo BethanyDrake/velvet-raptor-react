@@ -36,12 +36,14 @@ jobs:
 
       # run tests!
       - run: yarn test
+      - run: npm test
+
+      # build
+      - run: npm run build
 
 
       #deploy
-      - run:
-          command:
-            yarn global add now
+      - run: sudo npm i -g now
 
       - run:
           command:
