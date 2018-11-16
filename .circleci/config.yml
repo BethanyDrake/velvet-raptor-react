@@ -49,7 +49,7 @@ jobs:
 
       - run:
           command:
-            now
+            now build
 
       - run:
           name: set alias
