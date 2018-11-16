@@ -56,4 +56,4 @@ jobs:
 
       - run:
           name: set alias
-          command: now alias $v1 velvet-raptor -t wtMwPTzvDTqOoV6jWI94UoQp
+          command: now alias ${cat now-output} velvet-raptor -t wtMwPTzvDTqOoV6jWI94UoQp
