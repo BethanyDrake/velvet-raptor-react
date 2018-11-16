@@ -39,7 +39,7 @@ jobs:
       - run: npm test
 
       # build
-      - run: npm run build
+      - run: CI=false npm run build
 
 
       #deploy
