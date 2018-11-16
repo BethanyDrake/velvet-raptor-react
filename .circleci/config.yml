@@ -51,6 +51,9 @@ jobs:
           command:
             now build -t wtMwPTzvDTqOoV6jWI94UoQp --name=website-name --static --public
 
+      - store_artifacts:
+          path: now-output
+
       - run:
           name: set alias
           command: now alias $v1 velvet-raptor -t wtMwPTzvDTqOoV6jWI94UoQp
